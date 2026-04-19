@@ -21,13 +21,6 @@ It combines architecture documentation, diagrams, and a React skeleton that refl
 3. Run tests with `npm test`.
 4. Type-check with `npm run lint`.
 
-## Repo Walkthrough
-- [docs/architecture.md](/Users/rakeshamathi/Documents/swissre_assesment/docs/architecture.md)
-- [docs/frontend-architecture.md](/Users/rakeshamathi/Documents/swissre_assesment/docs/frontend-architecture.md)
-- [docs/api-contracts.md](/Users/rakeshamathi/Documents/swissre_assesment/docs/api-contracts.md)
-- [docs/interview-walkthrough.md](/Users/rakeshamathi/Documents/swissre_assesment/docs/interview-walkthrough.md)
-- [docs/diagrams/claims-platform-mermaid.md](/Users/rakeshamathi/Documents/swissre_assesment/docs/diagrams/claims-platform-mermaid.md)
-
 ## Code Layout
 - `src/app/`: providers, router, app startup, global styles.
 - `src/routes/`: route-level entry points.
@@ -43,6 +36,3 @@ It combines architecture documentation, diagrams, and a React skeleton that refl
 - Zustand only stores local UI concerns such as the active workspace panel.
 - The grid is implemented as a reusable `ServerDataGrid` abstraction to keep server-side list operations explicit.
 - The document workspace is intentionally a placeholder shell so it is easy to explain where real PDF rendering, Web Workers, and background job polling would integrate.
-
-## Interview Framing
-Use the codebase to show separation of concerns rather than completeness. The strongest story here is that the UI is intentionally small, typed, and extensible because the hard problems are delegated to the right architectural boundaries.
